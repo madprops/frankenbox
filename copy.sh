@@ -1,3 +1,3 @@
 #!/bin/bash
-cp ~/.config/openbox/* openbox/
-cp ~/.config/tint2/* tint2/
+cp -u ~/.config/openbox/* openbox/
+cp -u ~/.config/tint2/* tint2/

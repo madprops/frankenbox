@@ -440,18 +440,17 @@
     </keybind>
     <!-- Flameshot -->
     <keybind key="C-Print">
-        <action name="Execute">
-          <execute>flameshot gui</execute>
-        </action>
+      <action name="Execute">
+        <execute>flameshot gui</execute>
+      </action>
     </keybind>
     <!-- Upload -->
     <keybind key="W-u">
-        <action name="Execute">
-          <execute>~/scripts/upload.sh</execute>
-        </action>
+      <action name="Execute">
+        <execute>~/scripts/upload.sh</execute>
+      </action>
     </keybind>
-
-  </keyboard> 
+  </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
     <!-- number of pixels the mouse must move before a drag begins -->
@@ -714,11 +713,13 @@
       <mousebind button="Up" action="Click">
         <action name="GoToDesktop">
           <to>previous</to>
+          <wrap>no</wrap>
         </action>
       </mousebind>
       <mousebind button="Down" action="Click">
         <action name="GoToDesktop">
           <to>next</to>
+          <wrap>no</wrap>
         </action>
       </mousebind>
       <mousebind button="A-Up" action="Click">
