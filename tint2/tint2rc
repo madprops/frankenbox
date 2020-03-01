@@ -160,10 +160,10 @@ task_background_id = 5
 task_active_background_id = 3
 task_urgent_background_id = 4
 task_iconified_background_id = 2
-mouse_left = toggle_iconify
+mouse_left = toggle
 mouse_middle = none
 mouse_right = none
-mouse_scroll_up = toggle
+mouse_scroll_up = none
 mouse_scroll_down = iconify
 
 #-------------------------------------
