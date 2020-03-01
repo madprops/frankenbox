@@ -190,7 +190,7 @@ launcher_item_app = /usr/share/applications/pavucontrol.desktop
 
 #-------------------------------------
 # Clock
-time1_format = %a %d  |  %H:%M
+time1_format = %a %d  |  %I:%M %p
 time2_format = 
 time1_font = Text Me One 12
 time1_timezone = 

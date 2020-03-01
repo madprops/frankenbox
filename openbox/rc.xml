@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Numix</name>
+    <name>Arc-Dark</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -259,7 +259,7 @@
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
     </keybind>
-    <keybind key="A-space">
+    <keybind key="A-F3">
       <action name="ShowMenu">
         <menu>client-menu</menu>
       </action>
@@ -411,8 +411,27 @@
     <keybind key="W-Up">
       <action name="Maximize"/>
     </keybind>
+    <!-- Top Half -->
+    <keybind key="W-S-Up">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>0</y>
+        <height>50%</height>
+        <width>100%</width>
+      </action>
+    </keybind>
+    <!-- Bottom Half -->
+    <keybind key="W-S-Down">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>-0</y>
+        <height>50%</height>
+        <width>100%</width>
+      </action>
+    </keybind>
     <!-- Media Control -->
-    <!-- in section keyboard add following: -->
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
         <execute>~/scripts/decvol.sh</execute>
