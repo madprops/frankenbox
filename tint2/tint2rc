@@ -95,7 +95,7 @@ border_color_pressed = #ffffff 31
 
 #-------------------------------------
 # Panel
-panel_items = TELSCB
+panel_items = TESCB
 panel_size = 100% 34
 panel_margin = 0 0
 panel_padding = 0 0 0

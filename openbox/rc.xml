@@ -450,6 +450,18 @@
         <execute>~/scripts/upload.sh</execute>
       </action>
     </keybind>
+    <!-- Expose -->
+    <keybind key="C-F9">
+      <action name="Execute">
+        <execute>skippy</execute>
+      </action>
+    </keybind>
+    <!-- Lock -->
+    <keybind key="W-l">
+      <action name="Execute">
+        <execute>i3lock --color=353535</execute>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
