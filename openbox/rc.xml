@@ -464,7 +464,7 @@
       </action>
     </keybind>
     <!-- Upload -->
-    <keybind key="W-u">
+    <keybind key="W-C-Up">
       <action name="Execute">
         <execute>~/scripts/upload.sh</execute>
       </action>
