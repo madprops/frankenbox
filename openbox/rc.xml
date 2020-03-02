@@ -472,7 +472,7 @@
     <!-- Expose -->
     <keybind key="C-F9">
       <action name="Execute">
-        <execute>skippy</execute>
+        <execute>wmctrl -a "Mozilla Firefox"</execute>
       </action>
     </keybind>
     <!-- Lock -->
@@ -957,6 +957,14 @@
       <focus>yes</focus>
       <layer>normal</layer>
       <fullscreen>yes</fullscreen> -->
+    </application>
+
+    <!-- Persistent Applications -->
+    <application class="Firefox">
+      <desktop>all</desktop>
+    </application>
+    <application class="VSCodium">
+      <desktop>all</desktop>
     </application>
 
   </applications>
