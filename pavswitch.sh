@@ -46,7 +46,7 @@ function switch_gui()
   ids=( $(pacmd list-sinks | egrep 'index:' | egrep -o '[0-9]+$' | tr '\n' ' ') )
   names=( $(pacmd list-sinks | egrep 'name:' | egrep -o '\..*>$' | tr -d '>' | tr '\n' ' ') )
 
-  zen_pars="--list --radiolist --column '' --column 'ID' --column 'Sink_name'"
+  zen_pars="--list --radiolist --column '' --column 'ID' --column 'Sink_name' --width=600 --height=400"
 
 # construct the zenity command
   for i in "${!ids[@]}"

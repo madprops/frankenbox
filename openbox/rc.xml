@@ -481,16 +481,10 @@
         <execute>i3lock --color=353535</execute>
       </action>
     </keybind>
-    <!-- Speakers -->
-    <keybind key="W-1">
+    <!-- Audio Switch -->
+    <keybind key="W-a">
       <action name="Execute">
-        <execute>~/scripts/pavswitch.sh 0</execute>
-      </action>
-    </keybind>
-    <!-- Headphones -->
-    <keybind key="W-2">
-      <action name="Execute">
-        <execute>~/scripts/pavswitch.sh 1</execute>
+        <execute>~/scripts/pavswitch.sh gui</execute>
       </action>
     </keybind>
 
