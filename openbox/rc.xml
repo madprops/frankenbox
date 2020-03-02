@@ -948,13 +948,16 @@
   # end of the example
 -->
     <!-- CUSTOM -->
+
+    <!-- Remove Decorations -->
     <application class="*">
       <decor>no</decor>
       <keepBorder>no</keepBorder>
       <!-- <maximized>true</maximized>
-    <focus>yes</focus>
-    <layer>normal</layer>
-    <fullscreen>yes</fullscreen> -->
+      <focus>yes</focus>
+      <layer>normal</layer>
+      <fullscreen>yes</fullscreen> -->
     </application>
+
   </applications>
 </openbox_config>

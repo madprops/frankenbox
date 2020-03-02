@@ -43,20 +43,21 @@ function switch_gui()
 {
 # get current output id, all output ids and the sink names
   current_id=$(pacmd list-sinks | egrep '\* index:' | egrep -o '[0-9]+$')
-  ids=( $(pacmd list-sinks | egrep 'index:' | egrep -o '[0-9]+$' | tr '\n' ' ') )
-  names=( $(pacmd list-sinks | egrep 'name:' | egrep -o '\..*>$' | tr -d '>' | tr '\n' ' ') )
-
-  zen_pars="--list --radiolist --column '' --column 'ID' --column 'Sink_name' --width=600 --height=400"
+  ids=($(pacmd list-sinks | egrep 'index:' | egrep -o '[0-9]+$' | tr '\n' ' '))
+  IFS=$'\n' names=($(pacmd list-sinks | grep 'device.description' | grep -oP '(?<=").*(?=")'))
+  zen_pars="--list --radiolist --column X --column ID --column Sink --width=500 --height=250"
+  unset IFS
 
 # construct the zenity command
   for i in "${!ids[@]}"
   do
       if [ ${ids[$i]} = $current_id ]; then
-        zen_pars="$zen_pars TRUE"
+        zen_pars="${zen_pars} TRUE"
       else
-        zen_pars="$zen_pars FALSE"
+        zen_pars="${zen_pars} FALSE"
       fi
-      zen_pars="$zen_pars ${ids[$i]} ${names[$i]}"
+      desc=$(echo "${names[$i]}" | tr ' ' '-')
+      zen_pars="${zen_pars} ${ids[$i]} ${desc}"
   done
 
 # change the audio sink with the switch_sink function
