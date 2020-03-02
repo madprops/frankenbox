@@ -472,7 +472,7 @@
     <!-- Expose -->
     <keybind key="C-F9">
       <action name="Execute">
-        <execute>wmctrl -a "Mozilla Firefox"</execute>
+        <execute>~/scripts/switch.sh</execute>
       </action>
     </keybind>
     <!-- Lock -->
@@ -485,6 +485,13 @@
     <keybind key="W-a">
       <action name="Execute">
         <execute>~/scripts/pavswitch.sh gui</execute>
+      </action>
+    </keybind>
+    <!-- Cycle Workspaces -->
+    <keybind key="W-backslash">
+      <action name="GoToDesktop">/
+        <to>right</to>
+        <wrap>yes</wrap>
       </action>
     </keybind>
 
